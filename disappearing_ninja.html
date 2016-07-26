@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Sharol Chand, 3/23/2016, Coding Dojo jQuery Assignment - Disappearing Ninja -->
+<html>
+<head>
+	<title>Disappeearing Ninja</title>
+	<link rel="stylesheet" type="text/css" href="disappearing_ninja.css">	
+	<!-- jQuery source -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+ 			// On-click of any image, make clicked image disappear
+ 			$(".square").on("click", function(){
+				$(this).fadeOut("slow");
+ 			});
+
+ 			// Restore all images
+ 			$("#restore").on("click", function(){
+				$(".square").show();
+ 			});
+		});
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<h1>Disappearing Ninja</h1>
+		<div id="content">
+			<img class="square" src="square_image.png" alt="Square image">
+			<img class="square" src="square_image.png" alt="Square image">
+			<img class="square" src="square_image.png" alt="Square image">
+			<img class="square" src="square_image.png" alt="Square image">
+			<img class="square" src="square_image.png" alt="Square image">
+			<img class="square" src="square_image.png" alt="Square image">
+			<img class="square" src="square_image.png" alt="Square image">
+			<img class="square" src="square_image.png" alt="Square image">
+		</div>
+		
+		<button id="restore" type="button">Restore</button>
+	</div>	
+</body>
+</html>

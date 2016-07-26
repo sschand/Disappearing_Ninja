@@ -1,0 +1,25 @@
+/* Sharol Chand, Coding Dojo, Style sheet for Disappearing Ninja assignment */
+*{
+	margin: 0px;
+}
+#container{
+	width: 1000px;
+	background-color: pink;
+	padding: 20px 0px 50px;
+}
+#container h1{
+	text-align: center;
+}
+#container .square{
+	height: 200px;
+	width: 200px;
+    padding: 30px 0px 0px 35px;	
+}
+#container #restore{
+	margin: 35px 0px 0px 35px;
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+}
